@@ -253,7 +253,7 @@ else:
         f"<b>{TICKER_MAIN} 전략 | TQQQ 200MA 기준</b>\n\n"
         f"<b>{msg}</b>\n\n"
         f"<b>--- 데이터 ---</b>\n"
-        f"{TICKER_LINE} 종가: \${close:.2f}\n"
+        f"TQQQ 종가: \${close:.2f}\n"
         f"200MA: \${ma:.2f}\n"
         f"MA+5%: \${ma5:.2f}\n"
         f"D-1: {cond_to_msg(yesterday_cond)}\n"

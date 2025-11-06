@@ -242,7 +242,7 @@ else:
 label = tz_label(datetime.now(EST))
 if not data_found or close is None:
     details = (
-        f"<b>{TICKER_MAIN} 200MA 전략 (실패)</b>\n\n"
+        f"<b>TQQQ 200MA 전략 (실패)</b>\n\n"
         f"<b>{msg}</b>\n"
         f"D-1: {cond_to_msg(yesterday_cond)}\n"
         f"D-2: {cond_to_msg(day_before_cond)}\n"
@@ -253,7 +253,7 @@ else:
         f"<b>{TICKER_MAIN} 200MA 전략 ({final_time_str} {label})</b>\n\n"
         f"<b>{msg}</b>\n\n"
         f"<b>--- 데이터 ---</b>\n"
-        f"{TICKER_MAIN} 종가: \${close:.2f}\n"
+        f"TQQQ 종가: \${close:.2f}\n"
         f"200MA: \${ma:.2f}\n"
         f"MA+5%: \${ma5:.2f}\n"
         f"D-1: {cond_to_msg(yesterday_cond)}\n"

@@ -250,7 +250,7 @@ if not data_found or close is None:
 else:
     # [!] (수정) "Bad substitution" 오류를 막기 위해 $ 앞에 \ (백슬래시) 추가
     details = (
-        f"<b>{TICKER_MAIN} 전략 | TQQQ 200MA 기준</b>\n\n"
+        f"<b>{TICKER_MAIN} 전략 | TQQQ 200MA 기준 텔레그램 시간 표기</b>\n\n"
         f"<b>{msg}</b>\n\n"
         f"<b>--- 데이터 ---</b>\n"
         f"TQQQ 종가: \${close:.2f}\n"

@@ -255,7 +255,7 @@ if not data_found or close is None:
 else:
     # [!] (수정) "Bad substitution" 오류를 막기 위해 $ 앞에 \ (백슬래시) 추가
     details = (
-        f"<b>{TICKER_MAIN} 전략 | {TICKER_LINE} 200MA 기준</b>\n\n"
+        f"<b>{TICKER_MAIN} 전략 | {TICKER_LINE} 200MA 기준 ({final_time_str} {label})</b>\n\n"
         f"<b>{msg}</b>\n\n"
         f"<b>--- 데이터 ---</b>\n"
         f"{TICKER_LINE} 종가: \${close:.2f}\n"

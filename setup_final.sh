@@ -220,10 +220,10 @@ if not data_found or close is None:
     msg = "<b>[오류]</b>\n데이터 수집 실패"
     today_cond = yesterday_cond
 else:
-    if close < ma:
+    if close <= ma:
         today_cond = 1
         msg = f"전량 {TICKER_RISK_OFF}" if yesterday_cond != 1 else f"{TICKER_RISK_OFF} 유지"
-    elif ma <= close < ma5:
+    elif ma < close <= ma5:
         today_cond = 2
         # [!] "어제가 1(TICKER_RISK_OFF)이었으면 '대기', 아니었으면 '매수'" 로직 추가
         if yesterday_cond == 1:

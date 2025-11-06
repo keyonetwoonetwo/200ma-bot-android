@@ -44,6 +44,7 @@ termux-setup-storage
 - 파일명을 setup_final.sh로 설정하였으나, 명칭바꾸면 해당명칭으로 수정할것
 sh ~/storage/downloads/setup_final.sh
 sh ~/storage/downloads/setup_final_tqqq200.sh
+sh ~/storage/downloads/setup_final_line.sh
 
 # 3. 텔레그램 봇 api 입력 
 - 텔레그램 설치 1번에서 복사한 http api:뒤의 코드를 입력 후 엔터 클릭
@@ -55,6 +56,7 @@ sh ~/storage/downloads/setup_final_tqqq200.sh
 
 # 5 안전자산의 티커 입력 후 엔터 클릭, 추가 매수 자산의 티커 입력 후 엔터 클릭
 - 5에서 입력한 내용은 따로 웹으로 연결해서 자료를 가져오는게 아니니 참고
+- _line의 경우 기준티커로 입력한 주식이 200일선의 값으로 가져와지니 참고
 
 ------운영과정-------- 
 
@@ -85,6 +87,6 @@ EX) TQQQ QLD 등 복수로 사용중이라 특정건만 지우고 싶다면?
 # 2. 생성된 파일들 삭제
 rm $HOME/삭제티커(대문자).py
 rm $HOME/삭제티커(대문자).log
-
 rm $HOME/prev_conditions_삭제티커(대문자).txt
+
 

@@ -16,9 +16,9 @@
 
 TQQQ SGOV SPYM를 기준으로 아래와 같은 식에 따라 당일 전략이 뜨도록 구성함
 
-1. TQQQ < 200MA → 결과값 : 전량 SGOV
+1. TQQQ <= 200MA → 결과값 : 전량 SGOV
 1-1. D-1 1.이고 D가 1 → 결과값 : SGOV 유지
-2. 200MA < TQQQ < 1.05*200MA → 결과값 : SGOV → TQQQ
+2. 200MA < TQQQ <= 1.05*200MA → 결과값 : SGOV → TQQQ
 2-1. D-1 1.이고 D가 2. → 결과값 : SGOV 대기
 2-2. D-1 1.이 아니라면 결과값 : SGOV → TQQQ
 3. 1.05*200MA < TQQQ → 결과값 : TQQQ유지 + SPYM매수
@@ -87,3 +87,4 @@ rm $HOME/삭제티커(대문자).py
 rm $HOME/삭제티커(대문자).log
 
 rm $HOME/prev_conditions_삭제티커(대문자).txt
+
